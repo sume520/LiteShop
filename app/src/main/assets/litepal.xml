@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="liteshop"></dbname>
+    <version value="1"></version>
+    <list>
+        <mapping class="com.sun.liteshop.login.User"></mapping>
+        <mapping class="com.sun.liteshop.Good"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/rp_view"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rollviewpager_play_delay="3000" />
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/rc_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rp_view"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/cart_icon"
+        android:scaleType="fitXY"
+        android:contentDescription="购物车"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>
